@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <title>June 7th</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Akshay" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css" href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EWCZHDCG9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3EWCZHDCG9');
+    </script>
+</head>
+
+<body>
+    <div id="div1" class="container">
+        <div>
+            <h1 class="header_text"> Hey Shravana Shree H D 🦋,<br> How about we enjoy a lovely dinner date together?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="1.gif" alt="gif">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onclick="moveButton()">No</button>
+        </div>
+    </div>
+    <div id="ans" class="container" style="display:none;">
+        <div>
+            <h1 class="header_text">Yaaaayyyyyyyyyyyyyyyyy❤️</h1>
+        </div>
+        <div class="gif_container">
+            <img src="2.gif" alt="gif">
+        </div>
+        <div class="header_text">
+            <p>
+                I am so happy that you said yes🫶🏻 
+                <br>
+                I am going to make you the best dinner ever✨
+                <br>
+                Date : 7th June 2024
+                <br>
+                Venue : The Green Hotel
+                <br>
+                Time : 7:00 PM
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var debounce = function (fn, t = 1000) {
+        let timer;
+        return function (...args) {
+            clearTimeout(timer);
+            timer = setTimeout(() => fn(...args), t);
+        }
+    };
+
+    function nextPage() {
+        document.getElementById('ans').style.display = 'block';
+        document.getElementById('div1').style.display = 'none';
+    }
+
+    function moveButton() {
+        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+        document.getElementById('noButton').style.left = `${x}px`;
+        document.getElementById('noButton').style.top = `${y}px`;
+    }
+</script>
+
+</html>
