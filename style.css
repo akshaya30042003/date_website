@@ -1,0 +1,94 @@
+body {
+    
+    height: 90vh;
+    background-color: #F5F5DC;
+    font-family: "Sevillana", cursive;
+}
+
+#ans {
+    display: none;
+}
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+}
+
+.header_text {
+    font-family: "Sevillana", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.text {
+    font-family: "Sevillana", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #f3bc86;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:  #e64b62;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .header_text{
+        color: black;
+        font-size: 40px;
+    }
+    
+    .gif_container{
+        margin-left:0;
+        height: auto;
+        width: auto;
+    }
+  }
